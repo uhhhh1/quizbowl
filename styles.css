@@ -1,0 +1,16 @@
+.outer-box{
+    background-color: rgb(231, 231, 231);
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(91, 91, 240),rgb(162, 64, 219))
+}
+
+.quizbowl{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 10%
+
+}
