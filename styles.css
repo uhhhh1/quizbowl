@@ -1,13 +1,66 @@
-.outer-box{
-    background-color: rgb(231, 231, 231);
-    padding-bottom: 0%;
+.square {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius:7px;
-    
+    align-self: center;
+    margin-left: 35%;
+    margin-top: 5%;
 }
+
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.submit-button{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    outline:none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  
+}
+
+
 
 body{
     background-image: linear-gradient(to right, rgb(91, 91, 240),rgb(162, 64, 219))
@@ -18,5 +71,6 @@ margin-top:10%
 }
 
 h1, .score, .input-container, .submit-button {
-    margin: 20px 0;
+    margin: 40px 0;
 }
+
