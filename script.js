@@ -1,11 +1,34 @@
+let questionList = ['what is skibidi toilet', 'who is skibidi toilet', 'why is skibidi toilet'];
+let answerList = ['skibidi', 'skibidi', 'skibidi'];
+let score = 0;
+let questionIndex = 0;
 
 const question = document.querySelector('.question-container')
-question.textContent = "answerList[0]"
+const button = document.querySelector('.question-container')
+const input = document.querySelector('#input-feild')
+let scoreContainer = document.querySelector('.score-container')
 
-const questions = document.getElementById("question-container");
-const questionList = ["Question 1", "Question 2", "Question 3"];
+question.textContent = questionList[questionIndex]
 
-let score = 0;
+let SubmitFunction = () =>{
+    button.addEventListener('click', () =>{
+        if(input.value === answerList[questionIndex]){
+            questionIndex += 1;
+            score += 1;
+            question.textContent = questionList[questionIndex];
+            scoreContainer.textContent = "Score: " + score;
+        }else{
+            score -= 1;
+            scoreContainer.textContent = "Score: " + score;
+        }
+        //PUT ENDGAME FUNCTION HERE
+    });
+}
 
-let currentQuestionIndex = 0
+let endGame = () =>{
+    if(questionIndex > 2){
+        scoreContainer.textContent = "Final Score: " + score;
+        question.textContent = "Congradulations, play again!";
 
+    }
+}
